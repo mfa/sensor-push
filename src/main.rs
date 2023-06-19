@@ -1,12 +1,11 @@
+mod data;
 mod gpu_sensor;
 mod push;
-mod data;
 
 use clap::Parser;
 
 use gpu_sensor::sensor_values;
 use push::send;
-
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
